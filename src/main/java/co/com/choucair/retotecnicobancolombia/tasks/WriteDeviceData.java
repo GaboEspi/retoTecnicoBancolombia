@@ -9,8 +9,24 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 public class WriteDeviceData implements Task {
-    public static WriteDeviceData onStep3() {
-        return Tasks.instrumented(WriteDeviceData.class);
+    private String strComputer;
+    private String strVersion;
+    private String strLanguage;
+    private String strMobile;
+    private String strModel;
+    private String strOp;
+
+    public WriteDeviceData(String strComputer, String strVersion, String strLanguage, String strMobile, String strModel, String strOp) {
+        this.strComputer = strComputer;
+        this.strVersion = strVersion;
+        this.strLanguage = strLanguage;
+        this.strMobile = strMobile;
+        this.strModel = strModel;
+        this.strOp = strOp;
+    }
+
+    public static WriteDeviceData onStep3(String strComputer,String strVersion, String strLanguage,String strMobile, String strModel, String strOp) {
+        return Tasks.instrumented(WriteDeviceData.class,strComputer,strVersion,strLanguage,strMobile,strModel,strOp);
     }
 
     @Override

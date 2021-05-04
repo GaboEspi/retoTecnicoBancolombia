@@ -12,16 +12,21 @@ import net.serenitybdd.screenplay.waits.WaitUntil;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class WriteLocationData implements Task {
+    private String strPostalCode;
 
-    public static WriteLocationData onStep2() {
-        return Tasks.instrumented(WriteLocationData.class);
+    public WriteLocationData(String strPostalCode) {
+        this.strPostalCode = strPostalCode;
+    }
+
+    public static WriteLocationData onStep2(String strPostalCode) {
+        return Tasks.instrumented(WriteLocationData.class,strPostalCode);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(UtestSignupLocationPage.INPUT_CITY),
-                Enter.theValue("230550").into(UtestSignupLocationPage.INPUT_POSTAL_CODE),
+                Enter.theValue(strPostalCode).into(UtestSignupLocationPage.INPUT_POSTAL_CODE),
                 Click.on(UtestSignupLocationPage.BUTTON_NEXT_STEP)
         );
     }
