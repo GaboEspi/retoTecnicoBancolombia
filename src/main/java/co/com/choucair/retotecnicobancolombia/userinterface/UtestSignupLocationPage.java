@@ -6,8 +6,6 @@ import net.serenitybdd.screenplay.targets.Target;
 public class UtestSignupLocationPage {
     public static final Target INPUT_CITY = Target.the("to input the city")
             .located(By.xpath("//*[@id=\"city\"]"));
-//    public static final Target SELECT_CITY = Target.the("to input the city")
-//            .located(By.xpath(""));
     public static final Target VALIDATION_CITY = Target.the("to check the city is ok")
             .located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[1]/div[1]/i"));
 

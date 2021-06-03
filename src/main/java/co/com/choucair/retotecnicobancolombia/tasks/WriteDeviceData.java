@@ -33,27 +33,27 @@ public class WriteDeviceData implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(UtestSignupDevicePage.SELECT_COMPUTER),
-                Enter.theValue("Windows").into(UtestSignupDevicePage.INPUT_COMPUTER),
+                Enter.theValue(this.strComputer).into(UtestSignupDevicePage.INPUT_COMPUTER),
                 Click.on(UtestSignupDevicePage.OPTION_COMPUTER),
 
                 Click.on(UtestSignupDevicePage.SELECT_VERSION),
-                Enter.theValue("2000").into(UtestSignupDevicePage.INPUT_VERSION),
+                Enter.theValue(this.strVersion).into(UtestSignupDevicePage.INPUT_VERSION),
                 Click.on(UtestSignupDevicePage.OPTION_VERSION),
 
                 Click.on(UtestSignupDevicePage.SELECT_LANGUAGE),
-                Enter.theValue("Spanish").into(UtestSignupDevicePage.INPUT_LANGUAGE),
+                Enter.theValue(this.strLanguage).into(UtestSignupDevicePage.INPUT_LANGUAGE),
                 Click.on(UtestSignupDevicePage.OPTION_LANGUAGE),
 
                 Click.on(UtestSignupDevicePage.SELECT_MOBILE),
-                Enter.theValue("Xiaomi").into(UtestSignupDevicePage.INPUT_MOBILE),
+                Enter.theValue(this.strMobile).into(UtestSignupDevicePage.INPUT_MOBILE),
                 Click.on(UtestSignupDevicePage.OPTION_MOBILE),
 
                 Click.on(UtestSignupDevicePage.SELECT_MODEL),
-                Enter.theValue("Redmi note 9s").into(UtestSignupDevicePage.INPUT_MODEL),
+                Enter.theValue(this.strModel).into(UtestSignupDevicePage.INPUT_MODEL),
                 Click.on(UtestSignupDevicePage.OPTION_MODEL),
 
                 Click.on(UtestSignupDevicePage.SELECT_OP),
-                Enter.theValue("Android 10").into(UtestSignupDevicePage.INPUT_OP),
+                Enter.theValue(this.strOp).into(UtestSignupDevicePage.INPUT_OP),
                 Click.on(UtestSignupDevicePage.OPTION_OP),
 
                 Click.on(UtestSignupDevicePage.BUTTON_NEXT_STEP)

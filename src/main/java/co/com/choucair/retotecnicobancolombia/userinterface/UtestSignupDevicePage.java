@@ -54,16 +54,4 @@ public class UtestSignupDevicePage {
 
     public static final Target BUTTON_NEXT_STEP = Target.the("to GO TO NEXT STEP")
             .located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/div[2]/div/a"));
-
-
-//    public static final Target INPUT_LANGUAGE = Target.the("to input language of operating system")
-//            .located(By.xpath("//*[@id=\"web-device\"]/div[3]/div[2]/div/div[1]/span/span[1]"));
-//    public static final Target INPUT_MOBILE_DEVICE = Target.the("to input her mobile device ")
-//            .located(By.xpath("//*[@id=\"mobile-device\"]/div[1]/div[2]/div/div[1]/span/a/i"));
-//    public static final Target INPUT_MODEL = Target.the("to input the model of device")
-//            .located(By.xpath("//*[@id=\"mobile-device\"]/div[2]/div[2]/div/div[1]/span/span[2]"));
-//    public static final Target INPUT_OS = Target.the("to input the operating system of the mobile device")
-//            .located(By.xpath("//*[@id=\"mobile-device\"]/div[3]/div[2]/div/div[1]/span/span[2]"));
-//    public static final Target BUTTON_NEXT_STEP = Target.the("to click and go to the next step")
-//            .located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/div[2]/div/a"));
 }

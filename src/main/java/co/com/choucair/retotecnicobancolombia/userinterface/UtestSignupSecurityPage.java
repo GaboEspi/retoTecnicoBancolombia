@@ -1,10 +1,9 @@
 package co.com.choucair.retotecnicobancolombia.userinterface;
 
 import net.serenitybdd.core.annotations.findby.By;
-import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 
-public class UtestSignupSecurityPage extends PageObject {
+public class UtestSignupSecurityPage{
         public static final Target INPUT_PASSWORD = Target.the("to input password")
                 .located(By.id("password"));
         public static final Target INPUT_PASSWORD_CONFIRM = Target.the("to input confirm password")

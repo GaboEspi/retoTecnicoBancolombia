@@ -2,12 +2,9 @@ package co.com.choucair.retotecnicobancolombia.userinterface;
 
 
 import net.serenitybdd.core.annotations.findby.By;
-import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 
-public class UtestSingupPersonalPage extends PageObject {
-//    public static final Target  = Target.the("")
-//        .located(By.xpath(""));
+public class UtestSingupPersonalPage{
     public static final Target INPUT_FIRSTNAME = Target.the("to input fist name ")
     .located(By.id("firstName"));
     public static final Target INPUT_LASTNAME = Target.the("to input last name")
